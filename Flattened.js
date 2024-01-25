@@ -15,6 +15,7 @@ function flatten(unflatObject) {
       }
   }
 
+  
   recurse(unflatObject);
   return result;
 }

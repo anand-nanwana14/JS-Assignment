@@ -21,6 +21,7 @@ function unflatten(flatObject) {
   }
 
   return result;
+  
 }
 
 // Example usage:

@@ -13,6 +13,7 @@ function calculateAlphabetFrequency(string) {
     return frequency;
 }
 
+
 const inputString = "dummy @@ bolobb hello";
 const alphabetFrequencies = calculateAlphabetFrequency(inputString);
 console.log(alphabetFrequencies);

@@ -17,6 +17,7 @@ function secondLargest(array) {
   return secondLargest;
 }
 
+
 const numbers = [15, 2, 8, 9, 1, 7];
 const result = secondLargest(numbers);
 console.log(result);
