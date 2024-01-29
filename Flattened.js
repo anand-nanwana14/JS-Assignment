@@ -1,38 +1,4 @@
+// Problem 3: Complete the flatten function that takes a JS Object, returns a JS Object in flatten format (compressed)
 function flatten(unflatObject) {
-  const result = {};
-
-  function recurse(obj, currentKey = '') {
-      for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            const newKey = currentKey ? `${currentKey}.${key}` : key;
-
-             if (typeof obj[key] === 'object' && obj[key] !== null) {
-              recurse(obj[key], newKey);
-          } else {
-              result[newKey] = obj[key];
-              }
-          }
-      }
+    // Write your code here
   }
-
-  recurse(unflatObject);
-  return result;
-}
-
-// Example usage:
-const nestedObject = {
-  a: 1,
-  b: {
-      c: 2,
-      d: {
-          e: 3,
-          f: {
-              g: 4
-          }
-      }
-  },
-  h: 5
-};
-
-const flattenedObject = flatten(nestedObject);
-console.log(flattenedObject);
